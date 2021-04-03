@@ -1,0 +1,24 @@
+
+
+
+<div [classList]="['task']">
+  <div [classList]="['task-body']">
+    {{task.id}} {{task.title}}<br>
+    {{task.tasksList}}
+  </div>
+  <div [classList]="['form']">
+    <form [formGroup]="updateList" (ngSubmit)="update(task)">
+      <button>rename list</button>
+      <input type="text" [formControl]="title" >
+      <button (click)="delete(task)">delete list</button>
+      <button (click)="gotoList(task)">go to list</button>
+    </form>
+
+  </div>
+
+</div>
+
+
+
+
+

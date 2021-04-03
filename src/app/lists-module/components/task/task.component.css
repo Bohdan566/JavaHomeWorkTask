@@ -1,0 +1,30 @@
+
+
+.task {
+  font-size: 26px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+}
+
+.form button {
+  color: white;
+  font-size: 18px;
+  margin: 6px;
+  padding: 6px;
+  border-radius: 8px;
+  border: 2px solid indigo;
+  background-color: dodgerblue;
+}
+
+.form input {
+  color: indigo;
+  font-size: 18px;
+  margin: 6px;
+  padding: 6px;
+  border-radius: 8px;
+  border: 2px solid indigo;
+  background-color: white;
+}

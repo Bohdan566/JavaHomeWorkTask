@@ -1,0 +1,53 @@
+
+<div [classList]="['chosen-cont']">
+  <div [classList]="['findTodo']">
+    <form [formGroup]="findTodo" (ngSubmit)="findToDo()">
+      <input type="text" [formControl]="titleTodo">
+      <button>find toDo</button>
+    </form>
+  </div>
+
+  <div>
+    {{chosenToDo?.id}}{{chosenToDo?.title}}
+    {{chosenToDo?.body}}
+  </div>
+
+  <div [classList]="['todo-header']">
+    {{chosenTask.id}} - {{chosenTask.title}}
+  </div>
+</div>
+
+
+
+<div [classList]="['todo']">
+  <div [classList]="['todo-body']">
+    <app-to-do *ngFor="let todo of todos" [todo]="todo"></app-to-do>
+  </div>
+
+
+
+  <div [classList]="['form']">
+    <form [formGroup]="addTodo" (ngSubmit)="action()" [classList]="['form-body']">
+      <div >
+        <div>Title</div>
+        <input type="text" [formControl]="title">
+      </div>
+
+      <div >
+        <div>Body</div>
+        <input type="text" [formControl]="body">
+      </div>
+
+      <div >
+        <div>Final Date</div>
+        <input type="text" [formControl]="finaldata">
+      </div>
+
+      <button>save todo</button>
+    </form >
+  </div>
+
+</div>
+
+
+

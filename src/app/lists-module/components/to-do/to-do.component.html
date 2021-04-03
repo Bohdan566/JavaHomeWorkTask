@@ -1,0 +1,25 @@
+
+<div [classList]="['todo-body']">
+  <div>
+    № {{todo.id}}. Title. {{todo.title}}<br>
+    Body.
+    {{todo.body}}<br>
+    Final data: {{todo.finaldata}}
+  </div>
+
+
+  <hr>
+
+  <div>
+    <form action="" [formGroup]="update">
+      <button (click)="deleteToDo(todo)">delete</button>
+      <br>
+      <button (click)="updateToDo(todo, update)">update</button>
+      <input type="text" [formControl]="title">
+      <input type="text" [formControl]="body">
+      <input type="text" [formControl]="finaldata">
+    </form>
+  </div>
+
+</div>
+

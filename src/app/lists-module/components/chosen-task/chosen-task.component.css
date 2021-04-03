@@ -1,0 +1,96 @@
+
+.chosen-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.findTodo {
+  margin-top: 30px;
+}
+
+.findTodo button {
+  color: white;
+  font-size: 18px;
+  margin: 6px;
+  padding: 6px;
+  border-radius: 8px;
+  border: 2px solid indigo;
+  background-color: dodgerblue;
+}
+
+.findTodo input {
+  color: indigo;
+  font-size: 18px;
+  margin: 6px;
+  padding: 6px;
+  border-radius: 8px;
+  border: 2px solid indigo;
+  background-color: white;
+}
+
+
+.todo-header {
+  font-size: 26px;
+  color: indigo;
+  margin-top: 30px;
+}
+
+
+
+
+
+.todo {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.todo-body{
+
+}
+
+
+
+.form {
+  margin-top: 150px;
+  border: 2px solid indigo;
+  border-radius: 6px;
+  font-size: 26px;
+  font-family: "Times New Roman";
+  color: indigo;
+  margin-bottom: 16px;
+}
+
+.form button {
+  color: indigo;
+  font-size: 18px;
+  margin: 6px;
+  padding: 6px;
+  border-radius: 8px;
+  border: 2px solid indigo;
+  background-color: white;
+}
+
+.form input {
+  color: indigo;
+  font-size: 18px;
+  margin: 6px;
+  padding: 6px;
+  border-radius: 8px;
+  border: 2px solid indigo;
+  background-color: white;
+}
+
+.form-body {
+  display: flex;
+  padding: 6px;
+  background-color: dodgerblue;
+}
+
+
+
+

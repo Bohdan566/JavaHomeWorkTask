@@ -1,0 +1,15 @@
+
+/* toDo body margin 0px*/
+
+.header{
+  background-color: dodgerblue;
+  font-size: 26px;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+}

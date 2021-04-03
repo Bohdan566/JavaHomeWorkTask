@@ -1,0 +1,25 @@
+
+
+<div [classList]="['list-header']"><H1>List of tasks which you need to do:</H1></div>
+
+<div [classList]="['list-body']">
+  <div>
+    <app-task *ngFor="let task of tasks" [task]="task"></app-task>
+  </div>
+</div>
+
+<hr>
+
+<div [classList]="['list-addList']">
+  <div [classList]="['list-addList-body']">If you need to save new list you should do it below</div>
+
+  <form [formGroup]="saveTask" (ngSubmit)="action()" >
+    <input type="text" [formControl]="title">
+    <button>save new list</button>
+  </form>
+</div>
+
+<router-outlet></router-outlet>
+
+
+
